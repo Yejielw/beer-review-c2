@@ -4,7 +4,7 @@
   <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-  <script src="script.js"></script>
+  
   <title>Beer Review</title>
 </head>
 <body>
@@ -16,9 +16,10 @@
 
       <section class="beers">
         <h2>Beers</h2>
-        <ul class="beers-list">
+        <ul id="beers1" class="beers-list">
           
         </ul>
+        <button class="btnOrderA btn btn-secondary" type="button">Order by Ascending order</button><span><button class="btnOrderD btn btn-danger" type="button">Order by Descending order</button></span>
       </section>
 
       <form class="beer-form">
@@ -36,11 +37,20 @@
             placeholder="Category">
           </input>
         </div>
-        <button class="btn btn-primary post-beer">Post</button>
+        <div class="form-group">
+	        <select class="form-control rating-input" name="" form="carform">
+			  <option value="1">1 Star</option>
+			  <option value="2">2 Stars</option>
+			  <option value="3">3 Stars</option>
+			  <option value="4">4 Stars</option>
+			  <option value="5">5 Stars</option>
+			</select>
+		</div>
+        <button type="button" id="myBtn" class="btn btn-primary post-beer">Post</button>
       </form>
       
     </div>
   </div>
-
+<script src="script.js"></script>
 </body>
 </html>
