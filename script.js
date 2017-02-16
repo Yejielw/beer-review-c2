@@ -13,7 +13,8 @@ var addBeer = function () {
 }
 var addBeersLi = function () {
  	$('.beers-list').append( "<li></li>");
- }
+ 	$('.beers-list li').addClass('list-group-item');
+ };
 
 var removeBeerLi = function () {
   	$('.beers-list').find('li').remove();
